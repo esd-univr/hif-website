@@ -54,25 +54,24 @@ HIFSuite is organized into three main repositories:
 - **[hif-frontend](https://github.com/esd-univr/hif-frontend)**
   Provides front-end tools to convert existing HDL code to HIF.
   Current tools include:
-  - `verilog2hif`: Verilog to HIF converter
-  - `vhdl2hif`: VHDL to HIF converter
+      - `verilog2hif`: Verilog to HIF converter
+      - `vhdl2hif`: VHDL to HIF converter
 
 - **[hif-backend](https://github.com/esd-univr/hif-backend)**
   Implements back-end tools to generate HDL code from HIF.
   Current tools include:
-  - `hif2sc`: Generates SystemC code from HIF
-  - `hif2verilog`: Generates Verilog code (currently incomplete)
+      - `hif2sc`: Generates SystemC code from HIF
+      - `hif2verilog`: Generates Verilog code (currently incomplete)
 
 ---
 
 ## Publications
 
-```bibtex
-Nicola Bombieri, Giuseppe Di Guglielmo, Michele Ferrari, Franco Fummi, Graziano
-Pravadelli, Francesco Stefanni, and Alessandro Venturelli. 2010. HIFsuite: tools
-for HDL code conversion and manipulation. EURASIP J. Embedded Syst. 2010,
-Article 4 (January 2010), 20 pages. https://doi.org/10.1155/2010/436328
-```
+- **`HIFsuite: tools for HDL code conversion and manipulation.`** Nicola Bombieri,
+Giuseppe Di Guglielmo, Michele Ferrari, Franco Fummi, Graziano Pravadelli,
+Francesco Stefanni, and Alessandro Venturelli. EURASIP J. Embedded Syst. 2010,
+Article 4 (January 2010), 20 pages.
+**[https://doi.org/10.1155/2010/436328](https://doi.org/10.1155/2010/436328)**
 
 ---
 
@@ -86,7 +85,5 @@ HIF is released under the BSD 2-Clause License.
 
 For technical support, collaborations, or further information, contact:
 
-Enrico Fraccaroli
-<enrico.fraccaroli@univr.it>
-Department of Engineering for Innovation Medicine
-University of Verona, Italy
+Enrico Fraccaroli (<enrico.fraccaroli@univr.it>), Department of Engineering for
+Innovation Medicine University of Verona, Italy
