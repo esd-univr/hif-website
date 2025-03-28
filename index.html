@@ -256,6 +256,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -266,6 +278,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repositories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -291,6 +376,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repositories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -314,10 +461,80 @@
 <p>HIF is under active development. The documentation is a work in progress and
 may contain errors or incomplete information.</p>
 </div>
-<p>HIF (Hardware Interchange Format) is a modular framework that defines an
-Abstract Syntax Tree (AST) and internal C++ representation for hardware
-description, enabling seamless translation between multiple front-end and
-back-end formats.</p>
+<p><strong>HIF Project</strong>  is a modular framework for modeling, transforming, and
+verifying heterogeneous HW/SW systems, based on the Hardware Interchange Format
+(HIF).</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>The <strong>HIF Project</strong> is a tightly integrated set of tools and APIs designed to
+support modeling, transformation, and verification of heterogeneous HW/SW
+systems. At its core lies the HIF format, a unified internal language that acts
+as a bridge between various Hardware Description Languages (HDLs) such as VHDL,
+Verilog, and SystemC (both RTL and TLM levels).</p>
+<p>HIF addresses key pain points in modern hardware design by providing:</p>
+<ul>
+<li>Bidirectional conversion between HDL and HIF</li>
+<li>Seamless integration of components modeled in different HDLs</li>
+<li>Automation for code abstraction, refinement, and fault injection</li>
+<li>A single environment for transactor generation, mutation analysis, and EFSM extraction</li>
+</ul>
+<p>By offering a standardized internal format and robust manipulation APIs, HIF
+enables faster design reuse, improves simulation performance, and supports
+safety-critical verification processes that would otherwise require multiple
+disconnected tools.</p>
+<hr />
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Bidirectional HDL to/from HIF conversion</li>
+<li>Integration of heterogeneous HDL components</li>
+<li>Abstraction and refinement of HDL models</li>
+<li>Fault injection and post-refinement verification</li>
+<li>Extensible APIs for advanced code manipulation</li>
+<li>Support for both front-end and back-end transformation tools</li>
+</ul>
+<hr />
+<h2 id="repositories">Repositories</h2>
+<p>HIFSuite is organized into three main repositories:</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/esd-univr/hif-core">hif-core</a></strong>
+  Contains the HIF abstract syntax tree (AST) representation and the core
+  functionality for visiting, analysis, and manipulation of HDL models.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/esd-univr/hif-frontend">hif-frontend</a></strong>
+  Provides front-end tools to convert existing HDL code to HIF.
+  Current tools include:</p>
+</li>
+<li><code>verilog2hif</code>: Verilog to HIF converter</li>
+<li>
+<p><code>vhdl2hif</code>: VHDL to HIF converter</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/esd-univr/hif-backend">hif-backend</a></strong>
+  Implements back-end tools to generate HDL code from HIF.
+  Current tools include:</p>
+</li>
+<li><code>hif2sc</code>: Generates SystemC code from HIF</li>
+<li><code>hif2verilog</code>: Generates Verilog code (currently incomplete)</li>
+</ul>
+<hr />
+<h2 id="publications">Publications</h2>
+<div class="highlight"><pre><span></span><code><span class="c">Nicola Bombieri, Giuseppe Di Guglielmo, Michele Ferrari, Franco Fummi, Graziano</span>
+<span class="c">Pravadelli, Francesco Stefanni, and Alessandro Venturelli. 2010. HIFsuite: tools</span>
+<span class="c">for HDL code conversion and manipulation. EURASIP J. Embedded Syst. 2010,</span>
+<span class="c">Article 4 (January 2010), 20 pages. https://doi.org/10.1155/2010/436328</span>
+</code></pre></div>
+<hr />
+<h2 id="license">License</h2>
+<p>HIF is released under the BSD 2-Clause License.</p>
+<hr />
+<h2 id="contact">Contact</h2>
+<p>For technical support, collaborations, or further information, contact:</p>
+<p>Enrico Fraccaroli
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#110;&#114;&#105;&#99;&#111;&#46;&#102;&#114;&#97;&#99;&#99;&#97;&#114;&#111;&#108;&#105;&#64;&#117;&#110;&#105;&#118;&#114;&#46;&#105;&#116;">&#101;&#110;&#114;&#105;&#99;&#111;&#46;&#102;&#114;&#97;&#99;&#99;&#97;&#114;&#111;&#108;&#105;&#64;&#117;&#110;&#105;&#118;&#114;&#46;&#105;&#116;</a>
+Department of Engineering for Innovation Medicine
+University of Verona, Italy</p>
 
 
 
